@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="loading" lang="kr" data-textdirection="ltr">
+  <!-- BEGIN: Head-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="금융 소외자를 위한 상담 플랫폼">
+    <meta name="keywords" content="금융, 금융소외자, 상담, 상담플랫품, 금융서비스, 인공지능 서비스, 신뢰">
+    <meta name="author" content="(주)금융과나눔">
+    <title>금융 소외자를 위한 상담 플랫폼</title>
+    <link rel="apple-touch-icon" href="app-assets/images/favicon/apple-touch-icon-152x152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/favicon/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/animate-css/animate.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/chartist-js/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
+    <!-- 
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/flag-icon/css/flag-icon.min.css">
+    -->
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-modern.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/intro.css">
+    <!-- END: Page Level CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/custom/custom.css">
+    <!-- END: Custom CSS-->	
+  </head>
+  <!-- END: Head-->
+
+  <body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu 2-columns  " data-open="click" data-menu="vertical-modern-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <header class="page-topbar" id="header">
+      <div class="navbar navbar-fixed"> 
+        <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-indigo-purple no-shadow">
+          <div class="nav-wrapper">
+            <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
+              <input class="header-search-input z-depth-2" type="text" name="Search" placeholder="검색어를 입력하세요">
+            </div>
+            <ul class="navbar-list right">
+              <li class="hide-on-med-and-down"><a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+              <li class="hide-on-large-only"><a class="waves-effect waves-block waves-light search-button" href="javascript:void(0);"><i class="material-icons">search</i></a></li>
+              <li><a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span></a></li>
+            </ul>
+          </div>
+          <nav class="display-none search-sm">
+            <div class="nav-wrapper">
+              <form>
+                <div class="input-field">
+                  <input class="search-box-sm" type="search" required="">
+                  <label class="label-icon" for="search"><i class="material-icons search-sm-icon">search</i></label><i class="material-icons search-sm-close">close</i>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <!-- END: Header-->
+
+    <!-- BEGIN: Page Main-->
+    <div id="main">
+      <div class="row">
+        <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+        <div class="breadcrumbs-dark pb-0 pt-4" id="breadcrumbs-wrapper">
+          <!-- Search for small screen-->
+          <div class="container">
+            <div class="row">
+              <div class="col s10 m6 l6">
+                <h5 class="breadcrumbs-title mt-0 mb-0">Blank Page</h5>
+                <ol class="breadcrumbs mb-0">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item"><a href="#">Pages</a>
+                  </li>
+                  <li class="breadcrumb-item active">Blank Page
+                  </li>
+                </ol>
+              </div>
+              <div class="col s2 m6 l6"><a class="btn dropdown-settings waves-effect waves-light breadcrumbs-btn right" href="#!" data-target="dropdown1"><i class="material-icons hide-on-med-and-up">settings</i><span class="hide-on-small-onl">Settings</span><i class="material-icons right">arrow_drop_down</i></a>
+                <ul class="dropdown-content" id="dropdown1" tabindex="0">
+                  <li tabindex="0"><a class="grey-text text-darken-2" href="user-profile-page.html">Profile<span class="new badge red">2</span></a></li>
+                  <li tabindex="0"><a class="grey-text text-darken-2" href="app-contacts.html">Contacts</a></li>
+                  <li tabindex="0"><a class="grey-text text-darken-2" href="page-faq.html">FAQ</a></li>
+                  <li class="divider" tabindex="-1"></li>
+                  <li tabindex="0"><a class="grey-text text-darken-2" href="user-login.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12">
+          <div class="container">
+            <div class="section">
+    <div class="card">
+        <div class="card-content">
+            <p class="caption mb-0">
+                Sample blank page for getting start!! Created and designed by Google, Material Design is a design
+                language that combines the classic principles of successful design along with innovation and
+                technology.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- START RIGHT SIDEBAR NAV -->
+<aside id="right-sidebar-nav">
+   <div id="slide-out-right" class="slide-out-right-sidenav sidenav rightside-navigation">
+      <div class="row">
+         <div class="slide-out-right-title">
+            <div class="col s12 border-bottom-1 pb-0 pt-1">
+               <div class="row">
+                  <div class="col s2 pr-0 center">
+                     <i class="material-icons vertical-text-middle"><a href="#" class="sidenav-close">clear</a></i>
+                  </div>
+                  <div class="col s10 pl-0">
+                     <ul class="tabs">
+                        <li class="tab col s4 p-0">
+                           <a href="#messages" class="active">
+                              <span>Messages</span>
+                           </a>
+                        </li>
+                        <li class="tab col s4 p-0">
+                           <a href="#settings">
+                              <span>Settings</span>
+                           </a>
+                        </li>
+                        <li class="tab col s4 p-0">
+                           <a href="#activity">
+                              <span>Activity</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slide-out-right-body">
+            <div id="messages" class="col s12">
+               <div class="collection border-none">
+                  <input class="header-search-input mt-4 mb-2" type="text" name="Search" placeholder="Search Messages" />
+                  <ul class="collection p-0">
+                     <li class="collection-item sidenav-trigger display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
+                        <span class="avatar-status avatar-online avatar-50"
+                           ><img src="app-assets/images/avatar/avatar-7.png" alt="avatar" />
+                           <i></i>
+                        </span>
+                        <div class="user-content">
+                           <h6 class="line-height-0">Elizabeth Elliott</h6>
+                           <p class="medium-small blue-grey-text text-lighten-3 pt-3">Thank you</p>
+                        </div>
+                        <span class="secondary-content medium-small">5.00 AM</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div id="settings" class="col s12">
+               <p class="mt-8 mb-0 ml-5 font-weight-900">GENERAL SETTINGS</p>
+               <ul class="collection border-none">
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Notifications</span>
+                        <div class="switch right">
+                           <label>
+                              <input checked type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Show recent activity</span>
+                        <div class="switch right">
+                           <label>
+                              <input type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Show recent activity</span>
+                        <div class="switch right">
+                           <label>
+                              <input type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Show Task statistics</span>
+                        <div class="switch right">
+                           <label>
+                              <input type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Show your emails</span>
+                        <div class="switch right">
+                           <label>
+                              <input type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Email Notifications</span>
+                        <div class="switch right">
+                           <label>
+                              <input checked type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <p class="mt-8 mb-0 ml-5 font-weight-900">SYSTEM SETTINGS</p>
+               <ul class="collection border-none">
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>System Logs</span>
+                        <div class="switch right">
+                           <label>
+                              <input type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Error Reporting</span>
+                        <div class="switch right">
+                           <label>
+                              <input type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Applications Logs</span>
+                        <div class="switch right">
+                           <label>
+                              <input checked type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Backup Servers</span>
+                        <div class="switch right">
+                           <label>
+                              <input type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="collection-item border-none mt-3">
+                     <div class="m-0">
+                        <span>Audit Logs</span>
+                        <div class="switch right">
+                           <label>
+                              <input type="checkbox" />
+                              <span class="lever"></span>
+                           </label>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div id="activity" class="col s12">
+               <div class="activity">
+                  <p class="mt-5 mb-0 ml-5 font-weight-900">SYSTEM LOGS</p>
+                  <ul class="collection with-header">
+                     <li class="collection-item">
+                        <div class="font-weight-900">
+                           Homepage mockup design <span class="secondary-content">Just now</span>
+                        </div>
+                        <p class="mt-0 mb-2">Melissa liked your activity.</p>
+                        <span class="new badge amber" data-badge-caption="Important"> </span>
+                     </li>
+                     <li class="collection-item">
+                        <div class="font-weight-900">
+                           Melissa liked your activity Drinks. <span class="secondary-content">10 mins</span>
+                        </div>
+                        <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                        <span class="new badge light-green" data-badge-caption="Resolved"></span>
+                     </li>
+                     <li class="collection-item">
+                        <div class="font-weight-900">
+                           12 new users registered <span class="secondary-content">30 mins</span>
+                        </div>
+                        <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                     </li>
+                     <li class="collection-item">
+                        <div class="font-weight-900">
+                           Tina is attending your activity <span class="secondary-content">2 hrs</span>
+                        </div>
+                        <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                     </li>
+                     <li class="collection-item">
+                        <div class="font-weight-900">
+                           Josh is now following you <span class="secondary-content">5 hrs</span>
+                        </div>
+                        <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                        <span class="new badge red" data-badge-caption="Pending"></span>
+                     </li>
+                  </ul>
+                  <p class="mt-5 mb-0 ml-5 font-weight-900">APPLICATIONS LOGS</p>
+                  <ul class="collection with-header">
+                     <li class="collection-item">
+                        <div class="font-weight-900">
+                           New order received urgent <span class="secondary-content">Just now</span>
+                        </div>
+                        <p class="mt-0 mb-2">Melissa liked your activity.</p>
+                     </li>
+                     <li class="collection-item">
+                        <div class="font-weight-900">System shutdown. <span class="secondary-content">5 min</span></div>
+                        <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                        <span class="new badge blue" data-badge-caption="Urgent"> </span>
+                     </li>
+                     <li class="collection-item">
+                        <div class="font-weight-900">
+                           Database overloaded 89% <span class="secondary-content">20 min</span>
+                        </div>
+                        <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                     </li>
+                  </ul>
+                  <p class="mt-5 mb-0 ml-5 font-weight-900">SERVER LOGS</p>
+                  <ul class="collection with-header">
+                     <li class="collection-item">
+                        <div class="font-weight-900">System error <span class="secondary-content">10 min</span></div>
+                        <p class="mt-0 mb-2">Melissa liked your activity.</p>
+                     </li>
+                     <li class="collection-item">
+                        <div class="font-weight-900">
+                           Production server down. <span class="secondary-content">1 hrs</span>
+                        </div>
+                        <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                        <span class="new badge blue" data-badge-caption="Urgent"></span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Slide Out Chat -->
+   <ul id="slide-out-chat" class="sidenav slide-out-right-sidenav-chat">
+      <li class="center-align pt-2 pb-2 sidenav-close chat-head">
+         <a href="#!"><i class="material-icons mr-0">chevron_left</i>Elizabeth Elliott</a>
+      </li>
+      <li class="chat-body">
+         <ul class="collection">
+            <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
+               <span class="avatar-status avatar-online avatar-50"
+                  ><img src="app-assets/images/avatar/avatar-7.png" alt="avatar" />
+               </span>
+               <div class="user-content speech-bubble">
+                  <p class="medium-small">hello!</p>
+               </div>
+            </li>
+         </ul>
+      </li>
+      <li class="center-align chat-footer">
+         <form class="col s12" onsubmit="slide_out_chat()" action="javascript:void(0);">
+            <div class="input-field">
+               <input id="icon_prefix" type="text" class="search" />
+               <label for="icon_prefix">Type here..</label>
+               <a onclick="slide_out_chat()"><i class="material-icons prefix">send</i></a>
+            </div>
+         </form>
+      </li>
+   </ul>
+</aside>
+<!-- END RIGHT SIDEBAR NAV -->
+<div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top"><a class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow"><i class="material-icons">add</i></a>
+    <ul>
+        <li><a href="css-helpers.html" class="btn-floating blue"><i class="material-icons">help_outline</i></a></li>
+        <li><a href="cards-extended.html" class="btn-floating green"><i class="material-icons">widgets</i></a></li>
+        <li><a href="app-calendar.html" class="btn-floating amber"><i class="material-icons">today</i></a></li>
+        <li><a href="app-email.html" class="btn-floating red"><i class="material-icons">mail_outline</i></a></li>
+    </ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END: Page Main-->
+
+
+	
+
+    <!-- BEGIN: Page Main-->
+    <div id="main">
+      <div class="row">
+        <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+        <div class="col s12">
+          <div class="container">
+            <!-- Current balance & total transactions cards-->
+			<div class="row mt-4">
+			   <div class="col s12 m4 l4">
+			      <!-- Current Balance -->
+			      <div class="card animate fadeLeft">
+			         <div class="card-content">
+			            <h4 class="card-title mb-0">Current Balance <i class="material-icons float-right">more_vert</i></h4>
+			            <p class="medium-small">This billing cycle</p>
+			            <div class="current-balance-container">
+			               <div id="current-balance-donut-chart" class="current-balance-shadow"></div>
+			            </div>
+			            <h5 class="center-align">$ 50,150.00</h5>
+			            <p class="medium-small center-align">Used balance this billing cycle</p>
+			         </div>
+			      </div>
+			   </div>
+			   <div class="col s12 m8 l8 animate fadeRight">
+			      <!-- Total Transaction -->
+			      <div class="card">
+			         <div class="card-content">
+			            <h4 class="card-title mb-0">Total Transaction <i class="material-icons float-right">more_vert</i></h4>
+			            <p class="medium-small">This month transaction</p>
+			            <div class="total-transaction-container">
+			               <div id="total-transaction-line-chart" class="total-transaction-shadow"></div>
+			            </div>
+			         </div>
+			      </div>
+			   </div>
+			</div>
+			<!--/ Current balance & total transactions cards-->
+
+<!-- User statistics & appointment cards-->
+<div class="row">
+   <div class="col s12 l5">
+      <!-- User Statistics -->
+      <div class="card user-statistics-card animate fadeLeft">
+         <div class="card-content">
+            <h4 class="card-title mb-0">User Statistics <i class="material-icons float-right">more_vert</i></h4>
+            <div class="row">
+               <div class="col s12 m6">
+                  <ul class="collection border-none mb-0">
+                     <li class="collection-item avatar">
+                        <i class="material-icons circle pink accent-2">trending_up</i>
+                        <p class="medium-small">This year</p>
+                        <h5 class="mt-0 mb-0">60%</h5>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col s12 m6">
+                  <ul class="collection border-none mb-0">
+                     <li class="collection-item avatar">
+                        <i class="material-icons circle purple accent-4">trending_down</i>
+                        <p class="medium-small">Last year</p>
+                        <h5 class="mt-0 mb-0">40%</h5>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="user-statistics-container">
+               <div id="user-statistics-bar-chart" class="user-statistics-shadow"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col s12 l4">
+      <!-- Recent Buyers -->
+      <div class="card recent-buyers-card animate fadeUp">
+         <div class="card-content">
+            <h4 class="card-title mb-0">Recent Buyers <i class="material-icons float-right">more_vert</i></h4>
+            <p class="medium-small pt-2">Today</p>
+            <ul class="collection mb-0">
+               <li class="collection-item avatar">
+                  <img src="app-assets/images/avatar/avatar-7.png" alt="" class="circle" />
+                  <p class="font-weight-600">John Doe</p>
+                  <p class="medium-small">18, January 2019</p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
+               </li>
+               <li class="collection-item avatar">
+                  <img src="app-assets/images/avatar/avatar-3.png" alt="" class="circle" />
+                  <p class="font-weight-600">Adam Garza</p>
+                  <p class="medium-small">20, January 2019</p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
+               </li>
+               <li class="collection-item avatar">
+                  <img src="app-assets/images/avatar/avatar-5.png" alt="" class="circle" />
+                  <p class="font-weight-600">Jennifer Rice</p>
+                  <p class="medium-small">25, January 2019</p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="col s12 l3">
+      <div class="card animate fadeRight">
+         <div class="card-content">
+            <h4 class="card-title mb-0">Conversion Ratio</h4>
+            <div class="conversion-ration-container mt-8">
+               <div id="conversion-ration-bar-chart" class="conversion-ration-shadow"></div>
+            </div>
+            <p class="medium-small center-align">This month conversion ratio</p>
+            <h5 class="center-align mb-0 mt-0">62%</h5>
+         </div>
+      </div>
+   </div>
+</div>
+<!--/ Current balance & appointment cards-->
+
+<div class="row">
+   
+   
+</div>
+
+<!-- START RIGHT SIDEBAR NAV -->
+
+<!-- END RIGHT SIDEBAR NAV -->
+
+<!-- Intro -->
+
+<!-- / Intro -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END: Page Main-->
+
+    <!-- BEGIN: Footer-->
+
+    <footer class="page-footer footer footer-static footer-dark gradient-45deg-indigo-purple gradient-shadow navbar-border navbar-shadow">
+      <div class="footer-copyright">
+        <div class="container"><span>&copy; 2019 <a href="#" target="_blank">금융과나눔</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="#">금융과나눔</a></span></div>
+      </div>
+    </footer>
+
+    <!-- END: Footer-->
+    <!-- BEGIN VENDOR JS-->
+    <script src="app-assets/js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <!--
+    <script src="app-assets/vendors/chartjs/chart.min.js" type="text/javascript"></script>
+    <script src="app-assets/vendors/chartist-js/chartist.min.js" type="text/javascript"></script>
+    <script src="app-assets/vendors/chartist-js/chartist-plugin-tooltip.js" type="text/javascript"></script>
+    <script src="app-assets/vendors/chartist-js/chartist-plugin-fill-donut.min.js" type="text/javascript"></script>
+    -->
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN THEME  JS-->
+    <script src="app-assets/js/plugins.js" type="text/javascript"></script>
+    <script src="app-assets/js/custom/custom-script.js" type="text/javascript"></script>
+    <!-- END THEME  JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <!--
+    <script src="app-assets/js/scripts/dashboard-modern.js" type="text/javascript"></script>
+    <script src="app-assets/js/scripts/intro.js" type="text/javascript"></script> 
+    -->
+    <!-- END PAGE LEVEL JS-->
+  </body>
+</html>
