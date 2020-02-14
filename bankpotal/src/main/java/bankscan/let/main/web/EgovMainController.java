@@ -105,8 +105,6 @@ public class EgovMainController {
 
 		Map<String, Object> map = bbsMngService.selectBoardArticles(boardVO, "BBSA02");
 		model.addAttribute("notiList", map.get("resultList"));
-
-
 		// 공지사항 메인컨텐츠 조회 끝 -----------------------------------
 
 		// 자유게시판 메인 컨텐츠 조회 시작 ---------------------------------
@@ -123,10 +121,7 @@ public class EgovMainController {
 		boardVO.setRecordCountPerPage(paginationInfo.getRecordCountPerPage());
 
 		model.addAttribute("bbsList", bbsMngService.selectBoardArticles(boardVO, "BBSA02").get("resultList"));
-
 		// 자유게시판 메인컨텐츠 조회 끝 -----------------------------------
-
-
 
 		// FAQ 메인 컨텐츠 조회 시작 ---------------------------------
 		/** EgovPropertyService.SiteList */
@@ -144,7 +139,6 @@ public class EgovMainController {
 		searchVO.setRecordCountPerPage(paginationInfo.getRecordCountPerPage());
 
         model.addAttribute("faqList", faqManageService.selectFaqList(searchVO));
-
 		// FAQ 메인 컨텐츠 조회 끝 -----------------------------------
 
         // 설문참여 메인 컨텐츠 조회 시작 -----------------------------------
@@ -162,8 +156,7 @@ public class EgovMainController {
 		qVO.setRecordCountPerPage(paginationInfo.getRecordCountPerPage());
 
         model.addAttribute("qriList", egovQustnrRespondInfoService.selectQustnrRespondInfoManageList(qVO));
-
-     // 설문참여 메인 컨텐츠 조회 끝 -----------------------------------
+        // 설문참여 메인 컨텐츠 조회 끝 -----------------------------------
 
 
 		return "main/EgovMainView";

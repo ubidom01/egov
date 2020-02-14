@@ -20,23 +20,36 @@
  ************************************************************************************************
 -->
 	<!-- 1.더미(Dummy) 인증  -->
+	<!-- 
 	<beans profile="dummy"> 
 		<bean id="egovUserDetailsHelper" class="bankscan.com.cmm.util.EgovUserDetailsHelper" 
 				p:egovUserDetailsService="#{new bankscan.com.cmm.service.impl.EgoDummyUserDetailsServiceImpl()}"/>
 	</beans>
-	
+	-->
 	<!-- 2.세션(Session) 인증  -->
 	<beans profile="session">  
 		<bean id="egovUserDetailsHelper" class="bankscan.com.cmm.util.EgovUserDetailsHelper" 
 				p:egovUserDetailsService="#{new bankscan.com.cmm.service.impl.EgovUserDetailsSessionServiceImpl()}"/>
 	</beans>
 	
+	<!-- 2.세션(Session) 인증  -->
+<!--  
+	<beans profile="session">  
+		<bean id="egovUserDetailsHelper" class="bankscan.com.cmm.util.EgovUserDetailsHelper">
+			<property name="egovUserDetailsService">
+                <ref bean="egovUserDetailsSessionService" />
+            </property>
+	    </bean>
+        <bean id="egovUserDetailsSessionService" class="bankscan.com.cmm.service.impl.EgovUserDetailsSessionServiceImpl"/>
+	</beans>
+-->	
 	<!-- 3.시큐리티(Security) 인증  -->
+	<!-- 
 	<beans profile="security">  
 		<bean id="egovUserDetailsHelper" class="bankscan.com.cmm.util.EgovUserDetailsHelper">
 	        <property name="egovUserDetailsService" ref="egovUserDetailsSecurityService" />
 	    </bean>
-	    <!-- 스프링 시큐리티를 이용한 인증을 사용할 빈 -->
-	    <bean id="egovUserDetailsSecurityService" class="bankscan.com.sec.ram.service.impl.EgovUserDetailsSecurityServiceImpl"/>
+	    <bean id="egovUserDetailsSecurityService" class="bankscan.let.sec.ram.service.impl.EgovUserDetailsSecurityServiceImpl"/>
 	</beans>
+	-->
 </beans>

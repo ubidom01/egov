@@ -22,7 +22,6 @@ import bankscan.com.cmm.annotation.IncludedInfo;
 import bankscan.com.cmm.config.EgovLoginConfig;
 import bankscan.com.cmm.service.EgovCmmUseService;
 import bankscan.com.cmm.service.Globals;
-import bankscan.com.cmm.util.EgovUserDetailsHelper;
 import bankscan.let.uat.uia.service.EgovLoginService;
 import bankscan.let.utl.sim.service.EgovClntInfo;
 import egovframework.rte.psl.dataaccess.util.EgovMap;
@@ -155,7 +154,6 @@ public class EgovLoginController {
 
 			// 3-1. 로그인 정보를 세션에 저장
 			request.getSession().setAttribute("loginVO", resultVO);
-
 			return "redirect:/uat/uia/actionMain.do";
 
 		} else {
@@ -251,16 +249,16 @@ public class EgovLoginController {
 	 */
 	@RequestMapping(value = "/uat/uia/actionMain.do")
 	public String actionMain(ModelMap model) throws Exception {
-
-		// 1. Spring Security 사용자권한 처리
-		Boolean isAuthenticated = EgovUserDetailsHelper.isAuthenticated();
-		if (!isAuthenticated) {
-			model.addAttribute("message", egovMessageSource.getMessage("fail.common.login"));
-			return "/uat/uia/EgovLoginUsr";
-		}
-		LoginVO user = (LoginVO) EgovUserDetailsHelper.getAuthenticatedUser();
 		
-		LOGGER.debug("User Id : {}", user.getId());
+		// 1. Spring Security 사용자권한 처리
+		//Boolean isAuthenticated = EgovUserDetailsHelper.isAuthenticated();
+		//if (!isAuthenticated) {
+		//	model.addAttribute("message", egovMessageSource.getMessage("fail.common.login"));
+		//	return "/uat/uia/EgovLoginUsr";
+		//}
+		//LoginVO user = (LoginVO) EgovUserDetailsHelper.getAuthenticatedUser();
+		
+		//LOGGER.debug("User Id : {}", user.getId());
 
 		/*
 		// 2. 메뉴조회
