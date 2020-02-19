@@ -30,7 +30,7 @@
 <head>
 <title>${pageTitle} <spring:message code="title.list" /></title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/com.css' />">
+<link type="text/css" rel="stylesheet" href="<c:url value='/css/com.css' />">
 <script type="text/javaScript" language="javascript" defer="defer">
 function fnCheckAll() {
     var checkField = document.listForm.checkField;

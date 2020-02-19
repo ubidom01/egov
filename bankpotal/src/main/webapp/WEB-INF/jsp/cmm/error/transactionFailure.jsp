@@ -34,6 +34,11 @@ function fncGoAfterErrorPage(){
               </tr>
               <tr>
                 <td><br />
+<%
+          Throwable ex = (Throwable)request.getAttribute("exception");
+          ex.printStackTrace();
+%>
+${exception.message}                
                   <br /></td>
               </tr>
               <tr>

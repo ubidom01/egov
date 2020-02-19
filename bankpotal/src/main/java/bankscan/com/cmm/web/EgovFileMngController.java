@@ -3,7 +3,8 @@ package bankscan.com.cmm.web;
 import java.util.List;
 import java.util.Map;
 
-import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+//import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+import bankscan.com.cmm.util.EgovUserDetailsHelper;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;

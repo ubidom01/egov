@@ -31,7 +31,7 @@
 <head>
 <title>${pageTitle} <spring:message code="title.list" /></title><!-- 부서관리 목록 -->
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/com.css' />">
+<link type="text/css" rel="stylesheet" href="<c:url value='/css/com.css' />">
 
 <script type="text/javaScript" language="javascript" defer="defer">
 function fncSelectDeptManageList(pageNo){

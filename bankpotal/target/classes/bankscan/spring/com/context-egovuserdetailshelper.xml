@@ -27,13 +27,14 @@
 	</beans>
 	-->
 	<!-- 2.세션(Session) 인증  -->
+<!--  
 	<beans profile="session">  
 		<bean id="egovUserDetailsHelper" class="bankscan.com.cmm.util.EgovUserDetailsHelper" 
 				p:egovUserDetailsService="#{new bankscan.com.cmm.service.impl.EgovUserDetailsSessionServiceImpl()}"/>
 	</beans>
+-->	
 	
 	<!-- 2.세션(Session) 인증  -->
-<!--  
 	<beans profile="session">  
 		<bean id="egovUserDetailsHelper" class="bankscan.com.cmm.util.EgovUserDetailsHelper">
 			<property name="egovUserDetailsService">
@@ -42,7 +43,6 @@
 	    </bean>
         <bean id="egovUserDetailsSessionService" class="bankscan.com.cmm.service.impl.EgovUserDetailsSessionServiceImpl"/>
 	</beans>
--->	
 	<!-- 3.시큐리티(Security) 인증  -->
 	<!-- 
 	<beans profile="security">  

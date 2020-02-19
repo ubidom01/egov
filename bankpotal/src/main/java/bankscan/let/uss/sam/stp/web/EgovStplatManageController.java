@@ -1,7 +1,8 @@
 package bankscan.let.uss.sam.stp.web;
 
 import egovframework.rte.fdl.property.EgovPropertyService;
-import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+//import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+import bankscan.com.cmm.util.EgovUserDetailsHelper;
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 
 import javax.annotation.Resource;

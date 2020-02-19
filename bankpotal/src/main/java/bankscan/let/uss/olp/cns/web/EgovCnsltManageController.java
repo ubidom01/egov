@@ -20,7 +20,8 @@ import bankscan.let.utl.fcc.service.EgovStringUtil;
 import bankscan.let.utl.sim.service.EgovFileScrty;
 import egovframework.rte.fdl.property.EgovPropertyService;
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
-import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+//import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+import bankscan.com.cmm.util.EgovUserDetailsHelper;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.annotation.Resource;

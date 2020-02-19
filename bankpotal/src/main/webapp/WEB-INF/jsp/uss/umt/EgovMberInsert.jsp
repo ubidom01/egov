@@ -150,8 +150,8 @@ function fnIdCheck1(){
     varParam.checkId = document.mberManageVO.mberId.value;
     var openParam = "dialogWidth:303px;dialogHeight:250px;scroll:no;status:no;center:yes;resizable:yes;";
         
-    alert(1);
-    return false;
+    //alert(1);
+    //return false;
     retVal = window.showModalDialog(url, varParam, openParam);
     if(retVal) {
     	document.mberManageVO.mberId.value = retVal;
@@ -213,7 +213,7 @@ function fnInsert(form){
 			<th><label for="mberId">${title}</label> <span class="pilsu">*</span></th>
 			<td class="left">
 				<form:input path="mberId" id="mberId" title="${title} ${inputTxt}" size="20" readonly="true" maxlength="20" style="width:80%;" />
-				<button id="btnMbrId" class="btn_s2" onClick="return false;" title="<spring:message code="button.delete" /> <spring:message code="input.button" />"><spring:message code="comUssUmt.userManageRegistBtn.idSearch" /></button>
+				<button id="btnMbrId" class="btn_s2" onClick="fnIdCheck1(); return false;" title="<spring:message code="button.delete" /> <spring:message code="input.button" />"><spring:message code="comUssUmt.userManageRegistBtn.idSearch" /></button>
 				<div><form:errors path="mberId" cssClass="error" /></div>
 			</td>
 		</tr>

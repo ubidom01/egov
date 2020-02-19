@@ -19,8 +19,8 @@ import bankscan.let.sym.ccm.ccc.service.CmmnClCode;
 import bankscan.let.sym.ccm.ccc.service.CmmnClCodeVO;
 import bankscan.let.sym.ccm.ccc.service.EgovCcmCmmnClCodeManageService;
 import egovframework.rte.fdl.property.EgovPropertyService;
-//import egovframework.com.cmm.util.EgovUserDetailsHelper;
-import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+import bankscan.com.cmm.util.EgovUserDetailsHelper;
+//import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 
 /**

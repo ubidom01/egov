@@ -78,6 +78,14 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath*:bankscan/spring/com/context-*.xml</param-value>
     </context-param>
+    
+    <!-- BEGIN: Add by bsjang -->
+    <context-param>
+        <param-name>spring.profiles.active</param-name>
+        <param-value>session</param-value>
+        <!-- <param-value>dumy. session, security</param-value> -->
+    </context-param>    
+    <!-- END: Add by bsjang -->
 
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>

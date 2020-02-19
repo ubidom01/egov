@@ -45,7 +45,7 @@
 <script type="text/javascript" src="<c:url value="/validator.do"/>"></script>
 <validator:javascript formName="userManageVO" staticJavascript="false" xhtml="true" cdata="false"/>
 <script type="text/javascript" src="<c:url value='/js/EgovZipPopup.js' />" ></script>
-<script src="<c:url value='/js/egovframework/com/cmm/jquery.js' />"></script>
+<script src="<c:url value='/js/jquery.js' />"></script>
 <script type="text/javaScript" language="javascript" defer="defer">
 /*********************************************************
  * 초기화

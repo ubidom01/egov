@@ -35,7 +35,7 @@
 <link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/com.css' />">
 <script type="text/javascript" src="<c:url value="/validator.do"/>"></script>
 <validator:javascript formName="userManageVO" staticJavascript="false" xhtml="true" cdata="false"/>
-<script type="text/javascript" src="<c:url value='/js/egovframework/com/sym/ccm/zip/EgovZipPopup.js' />" ></script>
+<script type="text/javascript" src="<c:url value='/js/EgovZipPopup.js' />" ></script>
 
 <script type="text/javaScript" language="javascript" defer="defer">
 function fnListPage(){

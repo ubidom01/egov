@@ -80,7 +80,7 @@ function fnDeleteUser() {
     	//alert(checkedIds);
         if(confirm("<spring:message code="common.delete.msg" />")){
         	document.listForm.checkedIdForDel.value=checkedIds;
-            document.listForm.action = "<c:url value='/uss/umt/mber/EgovMberDelete.do'/>";
+            document.listForm.action = "<c:url value='/uss/umt/EgovMberDelete.do'/>";
             document.listForm.submit();
         }
     }
@@ -94,21 +94,21 @@ function fnSelectUser(id) {
 	    userId = array[1];    
 	}
 	document.listForm.selectedId.value = userId;
-    document.listForm.action = "<c:url value='/uss/umt/mber/EgovMberSelectUpdtView.do'/>";
+    document.listForm.action = "<c:url value='/uss/umt/EgovMberSelectUpdtView.do'/>";
     document.listForm.submit();
 }
 function fnAddUserView() {
-    document.listForm.action = "<c:url value='/uss/umt/mber/EgovMberInsertView.do'/>";
+    document.listForm.action = "<c:url value='/uss/umt/EgovMberInsertView.do'/>";
     document.listForm.submit();
 }
 function fnLinkPage(pageNo){
     document.listForm.pageIndex.value = pageNo;
-    document.listForm.action = "<c:url value='/uss/umt/mber/EgovMberManage.do'/>";
+    document.listForm.action = "<c:url value='/uss/umt/EgovMberManage.do'/>";
     document.listForm.submit();
 }
 function fnSearch(){
 	document.listForm.pageIndex.value = 1;
-	document.listForm.action = "<c:url value='/uss/umt/mber/EgovMberManage.do'/>";
+	document.listForm.action = "<c:url value='/uss/umt/EgovMberManage.do'/>";
     document.listForm.submit();
 }
 <c:if test="${!empty resultMsg}">alert("<spring:message code="${resultMsg}" />");</c:if>

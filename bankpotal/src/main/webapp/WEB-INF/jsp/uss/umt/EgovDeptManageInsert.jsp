@@ -31,8 +31,8 @@
 <head>
 <title>${pageTitle} <spring:message code="title.create" /></title><!-- 부서관리 등록 -->
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/com.css' />">
-<script type="text/javascript" src="<c:url value='/js/egovframework/com/cmm/fms/EgovMultiFile.js'/>"></script>
+<link type="text/css" rel="stylesheet" href="<c:url value='/css/com.css' />">
+<script type="text/javascript" src="<c:url value='/js/EgovMultiFile.js'/>"></script>
 <script type="text/javascript" src="<c:url value="/validator.do"/>"></script>
 <validator:javascript formName="deptManage" staticJavascript="false" xhtml="true" cdata="false"/>
 <script type="text/javaScript" language="javascript">

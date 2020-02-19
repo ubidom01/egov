@@ -5,7 +5,8 @@ import java.util.List;
 import bankscan.com.cmm.service.EgovUserDetailsService;
 
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
-import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+//import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
+import bankscan.com.cmm.util.EgovUserDetailsHelper;
 
 /**
  *권한관리 인증에 대한 ServiceImpl 클래스를 정의한다.

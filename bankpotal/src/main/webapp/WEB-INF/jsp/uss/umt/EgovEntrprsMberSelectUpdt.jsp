@@ -32,10 +32,10 @@
 <head>
 <title>${pageTitle} <spring:message code="title.update" /></title><!-- 기업회원관리 수정 -->
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/com.css' />">
+<link type="text/css" rel="stylesheet" href="<c:url value='/css/com.css' />">
 <script type="text/javascript" src="<c:url value="/validator.do"/>"></script>
 <validator:javascript formName="entrprsManageVO" staticJavascript="false" xhtml="true" cdata="false"/>
-<script type="text/javascript" src="<c:url value='/js/egovframework/com/sym/ccm/zip/EgovZipPopup.js' />" ></script>
+<script type="text/javascript" src="<c:url value='/js//EgovZipPopup.js' />" ></script>
 <script type="text/javaScript" language="javascript" defer="defer">
 function fnListPage(){
     document.entrprsManageVO.action = "<c:url value='/uss/umt/EgovEntrprsMberManage.do'/>";

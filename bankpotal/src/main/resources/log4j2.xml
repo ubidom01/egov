@@ -12,6 +12,10 @@
         <Logger name="egovframework" level="DEBUG" additivity="false">
             <AppenderRef ref="console" />
         </Logger>
+        <!-- Add by bsjang  -->
+        <Logger name="bankscan" level="DEBUG" additivity="true">
+            <AppenderRef ref="console" />
+        </Logger>        
           <!-- log SQL with timing information, post execution -->
         <Logger name="jdbc.sqltiming" level="INFO" additivity="false">
             <AppenderRef ref="console" />
